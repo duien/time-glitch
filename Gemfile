@@ -4,7 +4,7 @@ gem 'rails', '3.0.9'
 gem 'mongo', '~> 1.3.1'
 gem 'bson_ext', '~> 1.3.1'
 gem 'mongo_mapper', '~> 0.9.1'
-gem 'omniauth', '~> 0.2.6'
+gem 'omniauth', :git => 'https://github.com/intridea/omniauth.git' 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
