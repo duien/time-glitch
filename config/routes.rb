@@ -1,6 +1,11 @@
 TimeGlitch::Application.routes.draw do
 
+  root :to => "timeline#index"
+
   match '/auth/:provider/callback', :to => 'sessions#create'
+  match '/sign_in', :to => 'sessions#new', :as => :sign_in,
+                    :defaults => { :provider => 'glitch' }
+  match '/sign_out', :to => 'sessions#destroy', :as => :sign_out
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
